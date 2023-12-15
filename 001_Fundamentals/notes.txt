@@ -1,0 +1,39 @@
+I'm learning how to solve algorithms and data structures. This file contains a set of algoritms based on the most fundamental concepts of coding. Check my code, then identify what type of algoritm it is for each problem. I then want you to generate for me a GitHub README.md that explains how each algo was solved.
+
+Concepts Learned:
+
+- Foundation Concepts
+    - Code Flow
+    - Variables
+    - Data Types
+    - Equals
+    - Console
+    - Functions
+    - Conditionals
+    - Complex Conditionals
+    - Chaining and Nesting
+    - Loops
+    - Loops and Code Flow
+    - Parameters
+
+
+- Fundamentals Concepts
+        > Fundamental Algos - Set I
+    - Return Values
+    - Arrays
+    - Writing Values into Arrays
+        > Fundamental Algos - Set II
+    - Arrays and FOR Loops
+        > Fundamental Algos - Set III
+        > Fundamental Algos - Set IV
+        > Challenge #1
+        > Fundamental Algos - Set V
+    - Modulo Operator
+        > Fundamental Algos - Set VI
+    - Math Library
+        > Fundamental Algos - Set VII
+    - Using Modulo
+        > Fundamental Algos - Set VIII
+    - Variables
+        > Fundamental Algos - Set IX
+        > Challenge #2

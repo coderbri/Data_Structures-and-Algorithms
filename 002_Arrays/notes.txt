@@ -1,0 +1,27 @@
+- Arrays
+    - Riot Walk
+        > Array Algos - Set I
+    - Array.length
+        > Array Algos - Set II (Min-to-Front)
+    - Passing by Reference
+        > Array Algos - Set III
+    - Loops
+        > Array Algos - Set IV
+        > Array Algos - Set V (Credit Card Validation)
+    - Truthy and Falsy
+        > Array Algos - Set VI
+        > Challenge #3
+        > Array Algos - Set VII
+        > Array Algos - Set VIII (Taco Truck)
+    - Divide and Conquer
+    - Time-Space Tradeoff
+        > Array Algos - Set IX
+        > Array Algos - Set X
+        > Array Algos - Set XI (Rain Terraces)
+    - Data Sufficiency
+        > Array Algos - Set XII
+
+- Strings & Assosciative Arrays
+    - More About Strings
+        > Strings Algo - Set I
+    - 
