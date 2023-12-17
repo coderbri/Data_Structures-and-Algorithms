@@ -146,12 +146,26 @@ console.log(celsiusToFarenheit(cTemp1) + "˚F");
 const cTemp2 = 8;
 console.log(celsiusToFarenheit(cTemp2) + "˚F");
 
+
 // * Equate Farenheit with Celsius
 function equateFarenheitCelsius() {
     for ( let celsius = 200; celsius >= -100; celsius-- ) {
         const fahrenheit = ( celsius * 9/5 ) + 32;
         
         // Check if Farenheit and Celsius values are equal
-        // Return the first matching Celsius value
+        if ( fahrenheit === celsius ) {
+            console.log( `At ${celsius}˚C, Farenheit and Celsius values equate: ${fahrenheit}˚F.` );
+            return celsius; // Return the first matching Celsius value
+        }
     }
+    console.log("No equating point found within the specified range.");
+    return null;
+}
+
+// Example usage:
+const equatingPoint = equateFarenheitCelsius();
+if (equatingPoint !== null) {
+    console.log( `The first equating point is at ${equatingPoint}˚C.` );
+} else {
+    console.log("No equating point found within the specified range.");
 }

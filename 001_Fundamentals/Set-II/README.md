@@ -13,6 +13,7 @@ This repository contains the second set of algorithms based on fundamental conce
 7. [Fit the First Value](#7-fit-the-first-value)
 8. [Fahrenheit to Celsius](#8-fahrenheit-to-celsius)
 9. [Celsius to Fahrenheit](#9-celsius-to-fahrenheit)
+10. [Equate Fahrenheit with Celsius](#10-equate-fahrenheit-with-celsius)
 
 ## 1. Countdown
 
@@ -198,11 +199,7 @@ console.log(fahrenheitToCelsius(fTemp2));
 
 Create **`celsiusToFahrenheit(cDegrees)`** that accepts the number of degrees Celsius and returns the equivalent temperature expressed in Fahrenheit degrees.
 
-- **(Optional):** Do Fahrenheit and Celsius values *equate* at a certain number? The scientific calculation can be complex, so for this challenge just try a series of Celsius integer values starting at 200, going downward (descending), checking whether it is equal to the corresponding Fahrenheit value.
-
-The algorithm converts Celsius to Fahrenheit and includes an optional check for equating values.
-
-**Type:** Temperature Conversion with Optional Check
+**Type:** Temperature Conversion
 
 ```javascript
 function celsiusToFahrenheit(cDegrees) {
@@ -213,16 +210,38 @@ function celsiusToFahrenheit(cDegrees) {
 // Example usage:
 const cTemp1 = 25;
 console.log(celsiusToFahrenheit(cTemp1));
-
-// Optional Check:
-// Do Fahrenheit and Celsius values equate at a certain number? (e.g., 200)
-const cTemp2 = 200;
-const fTempEquivalent = celsiusToFahrenheit(cTemp2);
-console.log(`Does ${cTemp2}°C equal ${fTempEquivalent}°F?`);
 ```
 
-## 10 Equate Farenheit with Celsius
+## 10. Equate Fahrenheit with Celsius
 
+Do Fahrenheit and Celsius values *equate* at a certain number? The scientific calculation can be complex, so for this challenge just try a series of Celsius integer values starting at 200, going downward (descending), checking whether it is equal to the corresponding Fahrenheit value.
+
+**Type:** Temperature Conversion with Optional Check
+
+```javascript
+function equateFahrenheitCelsius() {
+    for (let celsius = 200; celsius >= -100; celsius--) {
+        const fahrenheit = (celsius * 9 / 5) + 32;
+
+        // Check if Fahrenheit and Celsius values are equal
+        if (fahrenheit === celsius) {
+            console.log(`At ${celsius}°C, Fahrenheit and Celsius values equate: ${fahrenheit}°F`);
+            return celsius; // Return the first matching Celsius value
+        }
+    }
+
+    console.log("No equating point found within the specified range.");
+    return null;
+}
+
+// Example usage:
+const equatingPoint = equateFahrenheitCelsius();
+if (equatingPoint !== null) {
+    console.log(`The first equating point is at ${equatingPoint}°C.`);
+} else {
+    console.log("No equating point found within the specified range.");
+}
+```
 
 ---
 <p align="right">Completed: 2023年12月1６日（土）</p>
