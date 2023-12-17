@@ -44,8 +44,8 @@ const exampleArray3 = [1, 3, 5, 7, 9, 13];
 const exampleArray4 = [4];
 function valuesGreaterThanSecond( arr ) {
     if ( arr.length < 2  ) {
-        console.log( "\nThe array should have at least two elements" );
-        return null; // or handle it accordingly based on your needs
+        console.log( "\nThe array should have at least two elements!" );
+        return null;
     }
     
     const secondValue = arr[1];
@@ -84,9 +84,74 @@ valuesGreaterThan2ndGeneralised(exampleArray4);
 
 
 // * This Length, That Value
+function thisLengthThatValue( num1, num2 ) {
+    // Check if they're the same value
+    if ( num1 === num2) {
+        console.log( "\nJinx!" );
+        return null;
+    }
+    
+    let newArr = [];
+    for ( let idx = 0; idx < num1; idx++ ) {
+        newArr.push(num2);
+    }
+    return newArr;
+}
+const arrExample = thisLengthThatValue(4,6);
+console.log(arrExample);
+
+const arrExample2 = thisLengthThatValue(4,4);
+console.log(arrExample2);
+
 
 // * Fit the First Value
+function fitFirstValue( arr ) {
+    // if  value at arr[0] > arr.length:
+    if ( arr[0] > arr.length ) {
+        console.log("Too big!");
+    } else if ( arr[0] < arr.length ) {
+        console.log("Too small!");
+    } else {
+        console.log("Just right!");
+    }
+}
+const arrExample3 = [2, 4, 6, 8, 10];
+fitFirstValue(arrExample3);
+
+const arrExample4 = [11, 9, 7, 5, 3, 1];
+fitFirstValue(arrExample4);
+
+const arrExample5 = [4, 16, 32, 64];
+fitFirstValue(arrExample5);
+
 
 // * Farenheit to Celsius
+function farenheitToCelsius( fDegrees ) {
+    let celsiusTemp = Math.round((fDegrees - 32) * 5/9);
+    return celsiusTemp;
+}
+const fTemp1 = 98.8;
+console.log(farenheitToCelsius(fTemp1) + "˚C");
+const fTemp2 = 63.6;
+console.log(farenheitToCelsius(fTemp2) + "˚C");
+
 
 // * Celsius to Farenheit
+function celsiusToFarenheit( cDegrees ) {
+    let farenheitTemp = Math.round((cDegrees + 9/5) + 32);
+    return farenheitTemp;
+}
+const cTemp1 = 27;
+console.log(celsiusToFarenheit(cTemp1) + "˚F");
+const cTemp2 = 8;
+console.log(celsiusToFarenheit(cTemp2) + "˚F");
+
+// * Equate Farenheit with Celsius
+function equateFarenheitCelsius() {
+    for ( let celsius = 200; celsius >= -100; celsius-- ) {
+        const fahrenheit = ( celsius * 9/5 ) + 32;
+        
+        // Check if Farenheit and Celsius values are equal
+        // Return the first matching Celsius value
+    }
+}
