@@ -18,7 +18,7 @@
 |  I  |  0014  | [Flexible Countdown](0014-Flexible-Counter/) | Prints multiples of a given number from a high number down to a low number. |
 |  I  |  0015  | [The Final Countdown](0015-The-Final-Countdown/) | Prints multiples of a given number within a range, excluding a specified value. |
 |  II |  0016  | [Countdown](0016-Countdown/) | Generates a countdown array starting from a given number down to 0, inclusive, and returns the resulting array along with its length for two different input values.
-|  II |  0017  | Print and Return | ??? |
+|  II |  0017  | [Print and Return](0017-Print-and-Return/) | A function that receives an array with two numbers. Print the first value, and return the second. |
 |  II |  0018  | First Plus Length | ??? |
 |  II |  0019  | Values Greater than Second | ??? |
 |  II |  0020  | Values Greater than Second, Generalized | ??? |
@@ -27,4 +27,5 @@
 |  II |  0023  | Fahrenheit to Celsius | ??? |
 |  II |  0024  | Celsius to Fahrenheit | ??? |
 
+| III |  0025  | ??? | ??? |
 | III |  00##  | ??? | ??? |
