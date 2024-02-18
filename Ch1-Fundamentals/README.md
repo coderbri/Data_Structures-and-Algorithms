@@ -19,7 +19,7 @@
 |  I  |  0015  | [The Final Countdown](0015-The-Final-Countdown/) | Prints multiples of a given number within a range, excluding a specified value. |
 |  II |  0016  | [Countdown](0016-Countdown/) | Generates a countdown array starting from a given number down to 0, inclusive, and returns the resulting array along with its length for two different input values.
 |  II |  0017  | [Print and Return](0017-Print-and-Return/) | A function that receives an array with two numbers. Print the first value, and return the second. |
-|  II |  0018  | First Plus Length | ??? |
+|  II |  0018  | [First Plus Length](0018-First-Plus-Length/) | A function that calculates the sum of the first value in the array and the array's length, while also ensuring the array is not empty and the first value is a number. |
 |  II |  0019  | Values Greater than Second | ??? |
 |  II |  0020  | Values Greater than Second, Generalized | ??? |
 |  II |  0021  | This Length, That Value | ??? |
