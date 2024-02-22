@@ -1,6 +1,6 @@
 # 0019 Values Greater than Second
 
-For the given array, the function prints values that are greater than its second value and returns the count of such values.
+For the given array (**[1, 3, 5, 7, 9, 13]**), the function prints values that are greater than its second value and returns the count of such values.
 
 ## JavaScript
 
@@ -14,7 +14,9 @@ function isNumericArray(arr) {
     return true;
 }
 
-function valuesGreaterThanSecond(arr) {
+function valuesGreaterThanSecond() {
+    const arr = [1, 3, 5, 7, 9, 13];
+
     if (arr.length === 0) {
         return "\\n!!! ERROR: There are no values in this array.";
     }
@@ -27,7 +29,8 @@ function valuesGreaterThanSecond(arr) {
             if (arr[i] > secondVal) {
                 console.log("Value > secondVal: " + arr[i]);
                 count++;
-            } // if not, move on to the next
+            }
+            // if not, move on to the next
         }
 
         return `--------------\\nValues greater than second value: ${count}\\n`;
@@ -35,13 +38,15 @@ function valuesGreaterThanSecond(arr) {
         return "\\n!!! ERROR: The array must consist of numbers.";
     }
 }
+
+console.log(valuesGreaterThanSecond());
 ```
 
-1. **Function Definition**: The function `valuesGreaterThanSecond` is defined, which takes an array `arr` as input.
+1. **Function Definition**: The function ``**valuesGreaterThanSecond**`` is defined without any parameters, tailored specifically for the array [1, 3, 5, 7, 9, 13].
 
-2. **Checking if the Array Consists of Numbers**: It first checks if the array consists of only numbers using the `isNumericArray` helper function.
+2. **Checking if the Array Consists of Numbers**: It checks if the array consists of only numbers using the `isNumericArray` helper function.
 
-3. **Finding Values Greater Than the Second Value**:
+3. **Finding Values Greater Than the Second Value**: 
     - If the array consists of numbers, it retrieves the second value and counts the values in the array that are greater than the second value.
     - It prints each value that meets this condition.
 
@@ -49,10 +54,9 @@ function valuesGreaterThanSecond(arr) {
 ## Python
 
 ```python
-def is_numeric_array(arr):
-    return all(isinstance(x, (int, float)) for x in arr)
+def get_values_greater_than_2nd():
+    arr = [1, 3, 5, 7, 9, 13]
 
-def get_values_greater_than_2nd(arr):
     if len(arr) == 0:
         return "\\n!!! ERROR: There are no values in this array."
 
@@ -67,11 +71,13 @@ def get_values_greater_than_2nd(arr):
             count += 1
 
     return f"--------------\\nValues greater than second value: {count}\\n"
+
+print(get_values_greater_than_2nd())
 ```
 
-1. **Function Definition**: The function `get_values_greater_than_2nd` is defined, which takes a list `arr` as input.
+1. **Function Definition**: The function `**get_values_greater_than_2nd**` is defined without any parameters, tailored specifically for the list `[1, 3, 5, 7, 9, 13]`.
 
-2. **Checking if the List Consists of Numbers**: It first checks if the list consists of only numbers using the `is_numeric_array` helper function.
+2. **Checking if the List Consists of Numbers**: It checks if the list consists of only numbers.
 
 3. **Finding Values Greater Than the Second Value**:
     - If the list consists of numbers, it retrieves the second value and counts the values in the list that are greater than the second value.

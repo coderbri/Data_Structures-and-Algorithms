@@ -1,7 +1,6 @@
-def is_numeric_array(arr):
-    return all(isinstance(x, (int, float)) for x in arr)
-
-def get_values_greater_than_2nd(arr):
+def get_values_greater_than_2nd():
+    arr = [1, 3, 5, 7, 9, 13]
+    
     if len(arr) == 0:
         return "\n!!! ERROR: There are no values in this array."
     
@@ -17,8 +16,4 @@ def get_values_greater_than_2nd(arr):
     
     return f"--------------\nValues greater than second value: {count}\n"
 
-arr1 = [1, 3, 5, 7, 9, 13]
-print(get_values_greater_than_2nd(arr1))
-
-arr2 = [64, 16, 32, 4, 8, 15]
-print(get_values_greater_than_2nd(arr2))
+print(get_values_greater_than_2nd())

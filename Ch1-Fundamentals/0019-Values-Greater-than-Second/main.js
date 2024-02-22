@@ -7,7 +7,9 @@ function isNumericArray(arr) {
     return true;
 }
 
-function valuesGreaterThanSecond(arr) {
+function valuesGreaterThanSecond() {
+    const arr = [1, 3, 5, 7, 9, 13];
+    
     if (arr.length === 0) {
         return "\n!!! ERROR: There are no values in this array.";
     }
@@ -21,7 +23,7 @@ function valuesGreaterThanSecond(arr) {
                 console.log("Value > secondVal: " + arr[i]);
                 count++;
             }
-            // if not, move on to the next
+            // if not > 2nd val, move on to the next
         }
         
         return `--------------\nValues greater than second value: ${count}\n`;
@@ -30,8 +32,4 @@ function valuesGreaterThanSecond(arr) {
     }
 }
 
-const arr1 = [1, 3, 5, 7, 9, 13];
-console.log(valuesGreaterThanSecond(arr1));
-
-const arr2 = [64, 16, 32, 4, 8, 15];
-console.log(valuesGreaterThanSecond(arr2));
+console.log(valuesGreaterThanSecond());
