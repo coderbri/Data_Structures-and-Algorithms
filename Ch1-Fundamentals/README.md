@@ -20,8 +20,8 @@
 |  II |  0016  | [Countdown](0016-Countdown/) | Generates a countdown array starting from a given number down to 0, inclusive, and returns the resulting array along with its length for two different input values.
 |  II |  0017  | [Print and Return](0017-Print-and-Return/) | A function that receives an array with two numbers. Print the first value, and return the second. |
 |  II |  0018  | [First Plus Length](0018-First-Plus-Length/) | A function that calculates the sum of the first value in the array and the array's length, while also ensuring the array is not empty and the first value is a number. |
-|  II |  0019  | [Values Greater than Second](0019-Values-Greater-than-Second/) | This function prints values that are greater than a given array's second value and returns the count of such values. |
-|  II |  0020  | Values Greater than Second, Generalized | ??? |
+|  II |  0019  | [Values Greater than Second](0019-Values-Greater-than-Second/) | This function prints values that are greater than a the array's (**[1, 3, 5, 7, 9, 13]**) second value and returns the count of such values. |
+|  II |  0020  | [Values Greater than Second (Generalized)](0020-Values-Greater-than-Second-Generalized/) | Similar to [Algorithm #0019](0019-Values-Greater-than-Second/), this function indentifies values in an array that are greater than its second element, counts them, and prints the count along with the new array containing those values. |
 |  II |  0021  | This Length, That Value | ??? |
 |  II |  0022  | Fit the First Value | ??? |
 |  II |  0023  | Fahrenheit to Celsius | ??? |
